@@ -21,8 +21,10 @@ If you are on reef, edit and commit here, and test on marlin:
   the GNOME screen reader.
 - SSH to marlin uses Tailscale check mode: a hanging connection that prints a
   `login.tailscale.com` link needs the user to approve it.
-- The plugin is loaded on marlin in development mode as `local.scratchpad`, from that copy:
-  syncing reloads the user's live panel.
+- The user runs the catalog install, `thisisryanswift.scratchpad`. Syncing the copy changes
+  nothing live. To try a change in the app, `plugin dev load .` in the copy adds a second panel as
+  `local.scratchpad` with its own storage (enter the host name `reef` once); `plugin dev unload .`
+  when done. For screenshots use `plugin shot local.scratchpad …` while it is loaded.
 
 ## Done means
 
