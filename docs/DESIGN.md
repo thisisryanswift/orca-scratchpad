@@ -68,7 +68,8 @@ Each was found against the live desktop app; none is in the plugin docs.
   For id-less events it cannot tell a switch from a terminal change until it asks, so the old list
   stays visible for that moment.
 
-Candidates for upstream issues on `stablyai/orca`: the first three.
+Reported upstream: [stablyai/orca#48366](https://github.com/stablyai/orca/issues/48366) (the first and third)
+and [#48367](https://github.com/stablyai/orca/issues/48367) (the second).
 
 ## Known limits
 
