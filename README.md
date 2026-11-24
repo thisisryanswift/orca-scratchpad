@@ -1,4 +1,4 @@
-# Scratchpad
+# Workspace Scratchpad
 
 A small to-do list for each Orca workspace, in the right sidebar, that your agents can edit too.
 

@@ -1,9 +1,13 @@
 {
   "manifestVersion": 2,
   "id": "scratchpad",
-  "name": "Scratchpad",
-  "version": "0.1.0",
+  "name": "Workspace Scratchpad",
+  "version": "0.1.1",
   "description": "A small to-do list for each workspace, in the right sidebar. It lives in a plain Markdown file in a synced folder, so your agents can read and edit it too.",
+  "author": { "name": "Ryan Swift", "url": "https://github.com/thisisryanswift" },
+  "repository": "https://github.com/thisisryanswift/orca-scratchpad",
+  "homepage": "https://github.com/thisisryanswift/orca-scratchpad",
+  "license": "MIT",
   "engines": {
     "orca": ">=1.4.259"
   },
