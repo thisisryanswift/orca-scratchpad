@@ -1,0 +1,39 @@
+{
+  "manifestVersion": 2,
+  "id": "scratchpad",
+  "name": "Scratchpad",
+  "version": "0.1.0",
+  "description": "A small to-do list for each workspace, in the right sidebar. It lives in a plain Markdown file in a synced folder, so your agents can read and edit it too.",
+  "engines": {
+    "orca": ">=1.4.259"
+  },
+  "execution": "trusted-worker",
+  "pluginApi": 1,
+  "main": "src/worker.ts",
+  "contributes": {
+    "panels": [
+      {
+        "id": "scratchpad",
+        "title": "Scratchpad",
+        "icon": "check",
+        "entry": "src/panel.tsx",
+        "ui": "components"
+      }
+    ],
+    "settings": [
+      {
+        "key": "folder",
+        "title": "Scratch folder",
+        "description": "Where the lists live: one Markdown file per workspace, in a folder per host. Point it at a folder Syncthing (or similar) shares with your servers so agents there edit the same lists.",
+        "type": "string",
+        "default": "~/Sync/orca-scratch",
+        "placeholder": "~/Sync/orca-scratch"
+      }
+    ]
+  },
+  "capabilities": [
+    { "kind": "workspace:read" },
+    { "kind": "storage:own" },
+    { "kind": "settings:own" }
+  ]
+}
